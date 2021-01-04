@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto vivo 9-12-2020</title>
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> 
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css"><!--directamente la carpeta donde esta el archivo por que public es estatico-->
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <nav class="nav-header-arriba"><!--barra de navegacion arriba-->
+                <img class="logo" src="images/logo-mercado-liebre.svg" alt="Logo"> 
+                <div class="buscador">
+                    <input type="text"></input><i class="fas fa-search icono-lupa-contenedor"></i>
+                </div><!--buscador-->
+                <h2 class="titulo-header-compraCreditCard"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2><!--compra tarjeta de credito-->    
+            </nav><!--barra de navegacion arriba-->
+            <nav class="nav-header-abajo"><!--barra de navegacion abajo-->
+                <ul class="izquierda-navBar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="derecha-navBar">
+                    <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li><a href="#">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav><!--barra de navegacion abajo-->
+            <div class="burger-menu"> 
+                <i class="fa fa-bars burger"></i> 
+            </div>
+        </div>
+    </header>
+    
+    <section class="formulario">
+        <div>
+            <h2>Registro</h2>
+        </div>
+        <form  action="home"  class="crear-formulario">
+            <div class="control-formulario">
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" name="nombre" id="nombre"class="control" placeholder="nombre y apellido"></input>
+            </div>
+            <div class="control-formulario">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario"class="control" placeholder="Usuario"></input>
+            </div>
+            <div class="control-formulario">
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento"class="control"></input>
+            </div>
+            <div class="control-formulario">
+                <label for="domicilio">Usuario</label>
+                <input type="text" name="domicilio" id="domicilio"class="control" placeholder="Domicilio"></input>
+            </div>
+            <div class="control-formulario">
+                <label>Perfil de usuario</label>
+                <label><input type="radio" name="perfilUsuario" id="perfilUsuarioComprador" value="vendedor" checked></input>Vendedor</label>
+                <label><input type="radio" name="perfilUsuario" id="perfilUsuarioVendedor" value="comprador"></input>Comprador</label>
+            </div>
+            <div class="control-formulario">
+                <label>Intereses</label>
+                <select name="intereses" required>
+                    <option value="">Seleccione una categoria</option><!--esto se hace para validar que se seleccione una opcion value=""-->
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="jugueteria">Jugueteria</option>
+                    <option value="vidaSana">Vida sana</option>
+                </select>
+            </div>
+            <div class="control-formulario">
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto" class="control"></input>
+            </div>
+            <div class="control-formulario">
+                <label for="contrasenia">Password</label>
+                <input type="pasword" name="contrasenia" id="contrasenia" class="control"></input>
+            </div>
+            <div class="control-formulario">
+                <label for="contraseniaConfirmar">Confirme su Password</label>
+                <input type="pasword" name="contraseniaConfirmar" id="contraseniaConfirmar" class="control"></input>
+            </div>
+
+            <button type="reset" class="boton-formulario">RESET</button>
+            <button type="submit" class="boton-formulario">CREAR</button>
+        </form>
+    </section>
+    
+</body>
+</html>
+<!--
+■ Nombre y apellido
+■ Nombre de usuari@
+■ Fecha de nacimiento (date)
+■ Domicilio (text)
+■ Perfil del usuario (consultar a l@s usuari@s si quieren comprar o vender) (radio)
+■ Categorías de interés (puede elegir más de una) (checkbox)
+    ● Electro
+    ● Moda
+    ● Hogar
+    ● Juguetería
+    ● Vida sana
+■ Foto de usuario (file)
+■ Contraseña (password)
+■ Confirmar contraseña (password)
+■ Botón de enviar que nos lleve a la página principal (button type="submit")
+■ Botón de borrar todos los datos del formulario
+(button type="reset")
+
+-->
