@@ -7,7 +7,7 @@ console.log('Corriendo NODE');
 
 app.use(express.static('public'));
 
-app.listen(3000,()=>{console.log("servidor funcionando")});
+app.listen(process.env.PORT||3000,()=>{console.log("servidor funcionando")});
 
 app.get('/',(req,res)=>{ 
     res.sendFile(path.join(__dirname,'/views/index.html'));
