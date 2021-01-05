@@ -11,22 +11,11 @@ body{
 }
 
 header{
-    position: fixed;
-    top:0px;
-    width: 100%;
     background-color: #EAC926;   
 }
-header .contenedor-header{   
+header .contenedor-header{
     width: 90vw;
     margin: auto;
-}
-
-.banner{
-    margin-top: 200px;
-}
-
-.banner img{
-    width: 100vw;
 }
 
 /*************header arriba**************/
@@ -90,7 +79,9 @@ header .nav-header-abajo{
     display: none;
 }
 
-
+.banner img{
+    width: 100vw;
+}
 
 
 section{
