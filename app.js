@@ -5,7 +5,9 @@ const app = express();
 
 console.log('Corriendo NODE');
 
-app.use(express.static('public'));
+/*PATH estaticos PUBLIC*/
+const publicPath = path.resolve (__dirname, '../public');
+app.use (express.static(publicPath));
 
 app.listen(process.env.PORT||3000,()=>{console.log("servidor funcionando")});
 
